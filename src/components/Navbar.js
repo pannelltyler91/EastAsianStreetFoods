@@ -1,12 +1,19 @@
 import React from "react";
-import {NavLink} from 'react-router-dom'
-import {BsCart} from 'react-icons/bs'
+import Nav from "react-bootstrap/Nav";
+import Container from 'react-bootstrap/Container'
 
 function Navbar() {
   return (
-      <div>
-          <NavLink to='/cart'><BsCart/></NavLink>
-      </div>
+    <Navbar bg="primary" variant="dark">
+      <Container>
+        <Navbar.Brand href="/">EASF</Navbar.Brand>
+        <Nav className="me-auto">
+          <Nav.Link href="/">Home</Nav.Link>
+          <Nav.Link href="/menu">Menu</Nav.Link>
+          <Nav.Link href="#pricing"></Nav.Link>
+        </Nav>
+      </Container>
+    </Navbar>
   );
 }
 

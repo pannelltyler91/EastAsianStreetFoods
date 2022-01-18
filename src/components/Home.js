@@ -7,6 +7,7 @@ import {BsCart} from 'react-icons/bs'
 import Button from 'react-bootstrap/Button'
 
 
+
 function Home(){
     const cartCount = useSelector((state) => state.cart.cartCount)
    const [showModal,setShowModal] = useState(false)
