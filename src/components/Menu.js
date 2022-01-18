@@ -15,7 +15,7 @@ function Menu (){
         console.log(e)
         const data = { items: cart};
   
-  fetch('http://localhost:3001/create_checkout_session', {
+  fetch('https://mysterious-dawn-97296.herokuapp.com/create_checkout_session', {
     method: 'POST', // or 'PUT'
     headers: {
       'Content-Type': 'application/json',
