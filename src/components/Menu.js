@@ -38,7 +38,7 @@ function Menu (){
         <Container>
             {menu.map((item) => {
                 return(
-                    <Card key={item.id}>
+                    <Card variant='info' key={item.id}>
                         <Card.Title style={{color:'#282c34'}}>{item.name}</Card.Title>
                         <Card.Body>
                             <Card.Text style={{color:'#282c34'}}>Price:${item.price}</Card.Text>
